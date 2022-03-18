@@ -14,9 +14,8 @@ namespace UserRegistrationRegularExPr
             bool flag = true;
             while (flag)
             {
-
                 Console.WriteLine("Enter Program number to get executed \n1. Validate first name \n2.Validate Lastname " +
-                    "\n3. Validate EmailID \n4. Exit");
+                    "\n3. Validate EmailID \n4.MobileFormat \n5.Exit");
                 ValidationRegex Checkpattern = new ValidationRegex();
                 int option = Convert.ToInt32(Console.ReadLine());
                 
@@ -41,7 +40,13 @@ namespace UserRegistrationRegularExPr
                         string email = Console.ReadLine();
                         Checkpattern.Checkemail(email);
                         break;
+
                     case 4:
+                        Console.WriteLine("Enter Mobile No. :");
+                        string mobilenum = Console.ReadLine();
+                        Checkpattern.Checkmobilenum(mobilenum);
+                        break;
+                    case 5:
                         flag = false;
                         break;
                     default:
