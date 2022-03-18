@@ -52,6 +52,9 @@ namespace UserRegistrationRegularExPr
                         Checkpattern.Checkpassward(passward);
                         break;
                     case 6:
+                        ValidationRegex.SampleEmail();
+                        break;
+                    case 7:
                         flag = false;
                         break;
                     default:

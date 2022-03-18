@@ -46,7 +46,8 @@ namespace UserRegistrationRegularExPr
             //string passwardpattern = "^[A-Za-z0-9]{8,20}$";
             //string passwardpattern = "^(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[0-9]).{8,}";
             //string passwardpattern = "^(?=.*[A-Z])(?=.*[0-9]).{8,}$";
-            string passwardpattern = "^(?=.*[A-Z])(?=.*[a-z]{8,}).*$";
+            //string passwardpattern = "^(?=.*[A-Z])(?=.*[a-z]{8,}).*$";
+            string passwardpattern = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[&%$#@^*!~]).{8,}$";
             if (Regex.IsMatch(Passward, passwardpattern))
                 Console.WriteLine("Passward is valid");
             else
