@@ -15,7 +15,7 @@ namespace UserRegistrationRegularExPr
             while (flag)
             {
                 Console.WriteLine("Enter Program number to get executed \n1. Validate first name \n2. Validate Lastname " +
-                  "\n3. Validate EmailID \n4. MobileFormat \n5. Password Validation \n6. Exit");
+                "\n3. Validate EmailID \n4. MobileFormat \n5. Password Validation \n6. Exit");
                 ValidationRegex Checkpattern = new ValidationRegex();
                 int option = Convert.ToInt32(Console.ReadLine());
                 
